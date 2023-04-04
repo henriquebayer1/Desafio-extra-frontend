@@ -8,17 +8,16 @@ width: 90%;
 display: flex;
 align-items: center;
 justify-content: center;
-border: 1px green solid;
+
 margin: 0 auto;
 }
 
-header, 
-main
+/* header
+main */
+body
+{background: linear-gradient(90deg, rgba(187,104,212,1) 18%, rgba(69,44,179,1) 70%);}
 
-{
-background: linear-gradient(90deg, rgba(187,104,212,1) 18%, rgba(69,44,179,1) 70%);
 
-}
 
 
 /* HEADER */
@@ -26,13 +25,14 @@ background: linear-gradient(90deg, rgba(187,104,212,1) 18%, rgba(69,44,179,1) 70
 
 header {}
 
+header h1 {color: white;}
+
 .header-flex {display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: space-between;
-gap: 20px;
-border: 1px solid red;
-margin-top: 15px;}
+gap: 30px;
+margin-top: 20px;}
 
 header .box-pesquisa {width: 470px;
 height: 50px;
@@ -41,6 +41,8 @@ display: flex;
 align-items: center;
 justify-content: flex-start;
 }
+
+header .box-pesquisa p {color: gray;}
 
 
 header .links-header {display: flex;
@@ -58,12 +60,66 @@ header .icon-link-header {display: flex;
     width: 130px;
 }
 
-header .icone-fav {color: white;
+header .icone-fav {
     height: 33px;
 width: 33px;}
-header .icone-shop {color: white;
+header .icone-shop {
     height: 35px;
     width: 33px;}
-header .icone-menu {color: white;
+header .icone-menu {
     height: 33px;
     width: 33px;}
+
+    /* MAIN */
+
+main {height: 665px;
+width: auto;
+}
+
+
+.main-flex {display: flex;
+    align-items: center;
+    justify-content: flex-end;}
+
+main h1 {color: white;
+font-size: 75px;
+font-weight: 900;}
+
+main h2 {color: white;
+font-size: 16px;
+font-weight: 700;}
+
+.box-content {position: relative;
+    z-index: 10;
+    width: 430px;
+    height: 440px;
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 38px;
+margin-top: 165px;
+margin-right: 195px;}
+
+main .box-button-Buy-now {width: 175px;
+height: 45px;
+border-radius: 35px;
+background-color: #F0C228;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main #button-Buy-now {color: white;
+border: none;
+background-color: transparent;
+font-size: 16px;
+font-weight: 600;
+}
+
+
+#main-back-image {position: absolute;
+    width: 700px;
+height: 600px;
+left: -615px;
+top: -100px;
+z-index: 2;}
